@@ -1,0 +1,9 @@
+{
+  "note": "Caps for cloud masking. A run is priced whole and refused whole before anything is sent. Raise them here when you need to.",
+  "per_study_usd": 10.0,
+  "per_month_usd": 40.0,
+  "month_ledger": "~/.motion-re/spend.jsonl",
+  "prices": {
+    "fal-ai/sam-3/image": {"usd_per_call": 0.005, "checked": "2026-10-19", "note": "one frame, one prompt; fal model page"}
+  }
+}

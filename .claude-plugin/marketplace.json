@@ -1,0 +1,12 @@
+{
+  "name": "reverse-engineer-motion",
+  "description": "Reverse-engineer how animation in any video moves, and prove a rebuild matches.",
+  "owner": {"name": "Sid Dani", "url": "https://github.com/sidart10"},
+  "plugins": [
+    {
+      "name": "reverse-engineer-motion",
+      "source": "./",
+      "description": "Measure how the animation in any video moves, rebuild it, and prove the rebuild matches claim by claim."
+    }
+  ]
+}

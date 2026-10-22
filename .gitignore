@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# studies hold creators' pixels; keep them local
+studies/
+raw/
+# local discovery file for the author's workspace
+app.manifest.json
+.public-export
