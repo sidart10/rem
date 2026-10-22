@@ -53,6 +53,7 @@ uv run scripts/doctor.py   # checks ffmpeg, yt-dlp and FAL_KEY
 | Recipe: the build-facing file a graphic's builder reads | built | `recipe` |
 | Kinetic type: letters keyed locally, per-letter moves, arrivals, stacked echoes, streaks | built | `glyph_motion.py` |
 | Side-by-side: the original and its rebuilds frame-locked, labelled, as MP4, GIF and stills | built | `side_by_side.py` |
+| Explainer figures from a study's own numbers: checkpoint curves, all 21 ease fits, the claim scorecard, a track's boxes, camera drift | built | `explain_figures.py` |
 | Perspective: rotateX/Y and tilt from the corners (flips can't be measured without it) | not yet | |
 
 ## How to run it
@@ -107,8 +108,8 @@ uv run scripts/side_by_side.py $E $S/motion/<nn-slug>-rebuild-v1 --out cmp.mp4 -
   Dropping the first pixels throws away an ease-out's fast start.
 - **Keep exclusions tight.** SAM's masks are already generous; a 12 px pad ate a line's slow tail and the ease read
   as linear. `--not-pad 2` fixed it.
-- **Register every frame straight to frame 0.** A frame-to-frame chain drifted about 2% over 90 frames and invented a
-  pan that wasn't there.
+- **Register every frame straight to frame 0.** On a 7.5 s zoom, a frame-to-frame chain ended 2.6% short and missed a
+  slow push-in entirely; an earlier chain split one camera move into two. `explain_figures.py camera-drift` draws both.
 - **Look at the structure at full size before fitting anything.** One scale for a whole badge was wrong: the label
   never scaled, only its parts grew onto it. Measure each part's own geometry.
 - **Time a rebuild at the original's levels,** and drive the rebuild in the recipe's units (px from the measuring
@@ -136,6 +137,6 @@ A full worked example (three Johnny Harris effects, every command and rebuild ve
 `examples/johnny-harris/`.
 
 Files: `scripts/motion_re.py` (CLI and `--self-test`), `scripts/glyph_motion.py` (kinetic type),
-`scripts/side_by_side.py` (the frame-locked comparison video),
+`scripts/side_by_side.py` (the frame-locked comparison video), `scripts/explain_figures.py` (charts from the numbers),
 `scripts/motionre/` (study, budget, frames, masks, measure, link, sheet, camera, series, pixels, fit, claims, glyphs,
 fetch, fal_client), `scripts/doctor.py`, `references/budget.json`.

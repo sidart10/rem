@@ -96,6 +96,8 @@ What came out:
 | Right line (to Britain) | `sine.out` from 0.897 to 3.149 s, 370 px; BIC gap 51 | derived |
 | Beads | about 23 px apart | observed by hand, kept in the recipe's `manual` block |
 
+![All 21 curves fitted to the line to Britain, best first](media/fig-eases.png)
+
 ### 4. Rebuild it, then measure the rebuild the same way
 
 The rebuild uses his frame 0 as the background plate, so only the motion is being tested. The camera push, the
@@ -122,7 +124,12 @@ Each version fixed what the previous comparison failed:
 | v5 | times read from `recipe.json`, rope eased edge to edge | 22 of 29 claims: part of the path sits under the badge, so the visible rope ran fast |
 | v6 | the rope tip driven in the recipe's own units (px from the measuring origin) | **26 of 29 claims** |
 
-The lesson in one picture: the constant-speed v1 against his and against v4, at frame 40.
+The lesson as numbers: the line to Britain over time. v1 reaches the halfway point 4.4 frames late (fail, and its
+curve fits as `none`, constant speed); v4 is 0.8 frames early (pass).
+
+![The line to Britain: original, v1 and v4, with the pass zone at each checkpoint](media/fig-curve.png)
+
+And in one picture, at frame 40:
 
 ![Original, constant-speed v1 and eased v4 at frame 40](media/a-linear-vs-eased-f040.png)
 
@@ -131,6 +138,8 @@ The lesson in one picture: the constant-speed v1 against his and against v4, at 
 ### 5. The claims, one by one (v6)
 
 From [`data/a-compare-v6.json`](data/a-compare-v6.json). Times are seconds from the window's first frame.
+
+![Every claim of v6: 26 pass, 3 fail](media/fig-scorecard.png)
 
 | Claim | His | Ours | Off by | Result |
 |---|---|---|---|---|
@@ -179,8 +188,11 @@ cleanly by colour, so no cloud masks were needed ($0).
 | v5 | 1.4 s letter fade, brighter text | line 2 half-bright 5 frames early |
 | v6 | ink stretched vertically into drips | reveal t10 and t50 on the frame; 20 drips against his 19 |
 
-The v3 mistake is a rule now: register every frame straight to frame 0. Chaining frame to frame drifted about 2% in
-scale over 90 frames and invented a second camera move.
+The v3 mistake is a rule now: register every frame straight to frame 0. Chaining frame to frame split one camera move
+into two. Re-registered both ways for the figure below, the chain ends 2.6% short (1.417 against 1.454) and misses the
+slow push-in at the end entirely; registered to frame 0, the scale matches the hand measurement.
+
+![Camera scale, chained against frame 0](media/fig-camera-drift.png)
 
 ---
 

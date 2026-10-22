@@ -1,4 +1,4 @@
-# reverse-engineer-motion
+# REM: Reverse Engineer Motion
 
 Measure how the animation in any video actually moves, rebuild it, and prove your rebuild moves the same way.
 
@@ -22,6 +22,8 @@ and the measurement showed they ease out (`sine.out`).
 Eyeballing can't catch that. Measuring both sides with the same code can.
 
 ## How it works
+
+![The pipeline: measure the original, then prove the rebuild with the same steps](examples/johnny-harris/media/fig-pipeline.png)
 
 ```
 video window ──► masks per frame ──► tracks ──► camera removed ──► quantities over time
@@ -57,21 +59,21 @@ Then add the skill to your agent. Pick one:
 **Claude Code plugin**
 
 ```
-/plugin marketplace add sidart10/reverse-engineer-motion
-/plugin install reverse-engineer-motion@reverse-engineer-motion
+/plugin marketplace add sidart10/rem
+/plugin install rem@rem
 ```
 
 **Any agent, with the skills CLI**
 
 ```bash
-npx skills add sidart10/reverse-engineer-motion
+npx skills add sidart10/rem
 ```
 
 **By hand**
 
 ```bash
-git clone https://github.com/sidart10/reverse-engineer-motion
-cp -r reverse-engineer-motion/skills/reverse-engineer-motion ~/.claude/skills/
+git clone https://github.com/sidart10/rem
+cp -r rem/skills/reverse-engineer-motion ~/.claude/skills/
 ```
 
 Check the setup and run the self-test (a synthetic clip with a known ease, the whole proof loop, no network, free):

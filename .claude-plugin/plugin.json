@@ -1,10 +1,22 @@
 {
-  "name": "reverse-engineer-motion",
-  "version": "0.2.0",
-  "description": "Measure how the animation in any video moves (timing, easing, stagger), rebuild it, and prove the rebuild matches claim by claim. SAM 3 masks on fal, everything else local.",
-  "author": {"name": "Sid Dani", "url": "https://github.com/sidart10"},
-  "homepage": "https://github.com/sidart10/reverse-engineer-motion",
-  "repository": "https://github.com/sidart10/reverse-engineer-motion",
+  "name": "rem",
+  "version": "0.3.0",
+  "description": "REM (Reverse Engineer Motion): measure how the animation in any video moves (timing, easing, stagger), rebuild it, and prove the rebuild matches claim by claim. SAM 3 masks on fal, everything else local.",
+  "author": {
+    "name": "Sid Dani",
+    "url": "https://github.com/sidart10"
+  },
+  "homepage": "https://github.com/sidart10/rem",
+  "repository": "https://github.com/sidart10/rem",
   "license": "MIT",
-  "keywords": ["motion-graphics", "animation", "video", "sam3", "gsap", "easing", "reverse-engineering"]
+  "keywords": [
+    "rem",
+    "motion-graphics",
+    "animation",
+    "video",
+    "sam3",
+    "gsap",
+    "easing",
+    "reverse-engineering"
+  ]
 }
