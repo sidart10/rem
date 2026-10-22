@@ -1,0 +1,254 @@
+{
+ "his": "01-badge-connectors",
+ "rebuild": "01-badge-connectors-rebuild-v6",
+ "at": "2026-10-21T20:39:13",
+ "passed": 26,
+ "of": 29,
+ "ready": false,
+ "rows": [
+  {
+   "id": "line-left.drawn.t10",
+   "kind": "time",
+   "his": 0.9959,
+   "ours": 1.0192,
+   "delta": 0.0233,
+   "delta_frames": 0.56,
+   "result": "pass"
+  },
+  {
+   "id": "line-left.drawn.t50",
+   "kind": "time",
+   "his": 1.6345,
+   "ours": 1.6068,
+   "delta": -0.0277,
+   "delta_frames": -0.66,
+   "result": "pass"
+  },
+  {
+   "id": "line-left.drawn.t90",
+   "kind": "time",
+   "his": 2.3871,
+   "ours": 2.3896,
+   "delta": 0.0025,
+   "delta_frames": 0.06,
+   "result": "pass"
+  },
+  {
+   "id": "line-left.drawn.t95",
+   "kind": "time",
+   "his": 2.5582,
+   "ours": 2.6779,
+   "delta": 0.1197,
+   "delta_frames": 2.87,
+   "result": "fail"
+  },
+  {
+   "id": "line-left.drawn.start",
+   "kind": "value",
+   "his": 0.0,
+   "ours": 0.0,
+   "delta": 0.0,
+   "result": "pass"
+  },
+  {
+   "id": "line-left.drawn.end",
+   "kind": "value",
+   "his": 346.0,
+   "ours": 340.0,
+   "delta": -6.0,
+   "result": "pass"
+  },
+  {
+   "id": "line-left.drawn.overshoot",
+   "kind": "value",
+   "his": 0.0,
+   "ours": 0.0,
+   "delta": 0.0,
+   "result": "pass"
+  },
+  {
+   "id": "line-left.drawn.ease",
+   "kind": "ease",
+   "his": "sine.out",
+   "ours": "sine.out",
+   "result": "pass"
+  },
+  {
+   "id": "line-right.drawn.t10",
+   "kind": "time",
+   "his": 1.0531,
+   "ours": 1.0313,
+   "delta": -0.0218,
+   "delta_frames": -0.52,
+   "result": "pass"
+  },
+  {
+   "id": "line-right.drawn.t50",
+   "kind": "time",
+   "his": 1.6719,
+   "ours": 1.6375,
+   "delta": -0.0344,
+   "delta_frames": -0.82,
+   "result": "pass"
+  },
+  {
+   "id": "line-right.drawn.t90",
+   "kind": "time",
+   "his": 2.4817,
+   "ours": 2.4958,
+   "delta": 0.0141,
+   "delta_frames": 0.34,
+   "result": "pass"
+  },
+  {
+   "id": "line-right.drawn.t95",
+   "kind": "time",
+   "his": 2.6308,
+   "ours": 2.7813,
+   "delta": 0.1505,
+   "delta_frames": 3.61,
+   "result": "fail"
+  },
+  {
+   "id": "line-right.drawn.start",
+   "kind": "value",
+   "his": 0.0,
+   "ours": 0.0,
+   "delta": 0.0,
+   "result": "pass"
+  },
+  {
+   "id": "line-right.drawn.end",
+   "kind": "value",
+   "his": 370.0,
+   "ours": 354.0,
+   "delta": -16.0,
+   "result": "fail"
+  },
+  {
+   "id": "line-right.drawn.overshoot",
+   "kind": "value",
+   "his": 0.0,
+   "ours": 0.0,
+   "delta": 0.0,
+   "result": "pass"
+  },
+  {
+   "id": "line-right.drawn.ease",
+   "kind": "ease",
+   "his": "sine.out",
+   "ours": "sine.out",
+   "result": "pass"
+  },
+  {
+   "id": "pulse.mean.peak_t",
+   "kind": "time",
+   "his": 0.7925,
+   "ours": 0.8333,
+   "delta": 0.0408,
+   "delta_frames": 0.98,
+   "result": "pass"
+  },
+  {
+   "id": "pulse.mean.rise_t50",
+   "kind": "time",
+   "his": 0.3116,
+   "ours": 0.3179,
+   "delta": 0.0063,
+   "delta_frames": 0.15,
+   "result": "pass"
+  },
+  {
+   "id": "pulse.mean.fall_t50",
+   "kind": "time",
+   "his": 1.2513,
+   "ours": 1.25,
+   "delta": -0.0013,
+   "delta_frames": -0.03,
+   "result": "pass"
+  },
+  {
+   "id": "pulse.mean.base",
+   "kind": "value",
+   "his": 51.223,
+   "ours": 51.54,
+   "delta": 0.317,
+   "result": "pass"
+  },
+  {
+   "id": "pulse.mean.peak",
+   "kind": "value",
+   "his": 90.954,
+   "ours": 92.444,
+   "delta": 1.49,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.t10",
+   "kind": "time",
+   "his": 0.3792,
+   "ours": 0.3788,
+   "delta": -0.0004,
+   "delta_frames": -0.01,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.t50",
+   "kind": "time",
+   "his": 1.7309,
+   "ours": 1.7291,
+   "delta": -0.0018,
+   "delta_frames": -0.04,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.t90",
+   "kind": "time",
+   "his": 3.0822,
+   "ours": 3.0791,
+   "delta": -0.0031,
+   "delta_frames": -0.07,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.t95",
+   "kind": "time",
+   "his": 3.2533,
+   "ours": 3.2462,
+   "delta": -0.0071,
+   "delta_frames": -0.17,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.start",
+   "kind": "value",
+   "his": 1.001,
+   "ours": 1.001,
+   "delta": 0.0,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.end",
+   "kind": "value",
+   "his": 1.085,
+   "ours": 1.0861,
+   "delta": 0.0011,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.overshoot",
+   "kind": "value",
+   "his": 0.0119,
+   "ours": 0.0118,
+   "delta": -0.0001,
+   "result": "pass"
+  },
+  {
+   "id": "camera.scale.ease",
+   "kind": "ease",
+   "his": "none",
+   "ours": "none",
+   "result": "pass"
+  }
+ ]
+}

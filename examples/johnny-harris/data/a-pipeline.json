@@ -1,0 +1,21 @@
+{
+ "effect": "01-badge-connectors",
+ "source": "https://www.youtube.com/watch?v=-DDbYSg0Alw",
+ "window_s": {
+  "t0": 268.9,
+  "t1": 272.4
+ },
+ "fps": 23.976023976023978,
+ "commands": [
+  "motion_re.py window https://www.youtube.com/watch?v=-DDbYSg0Alw --study <study> --effect 01-badge-connectors --t0 268.9 --t1 272.4",
+  "motion_re.py camera <study>/motion/01-badge-connectors --anchors 640,240 1370,764",
+  "motion_re.py fit <study>/motion/01-badge-connectors camera.scale",
+  "motion_re.py pixels <study>/motion/01-badge-connectors --name line-left --rule luma<60 --rule dluma<-40 --within-source sam3-dotted-line --not-source sam3-octagon --not-pad 2 --open 3 --path-auto 898,609 --toward 640,240 --skip 138 --origin 74 --bridge 40",
+  "motion_re.py pixels <study>/motion/01-badge-connectors --name line-right --rule luma<60 --rule dluma<-40 --within-source sam3-dotted-line --not-source sam3-octagon --not-pad 2 --open 3 --path-auto 898,609 --toward 1370,764 --skip 138 --origin 74 --bridge 40",
+  "motion_re.py fit <study>/motion/01-badge-connectors line-left.drawn",
+  "motion_re.py fit <study>/motion/01-badge-connectors line-right.drawn",
+  "motion_re.py pixels <study>/motion/01-badge-connectors --name pulse --value red --rule dluma>-40 --ring 898,609,65,136 --not-source sam3-octagon",
+  "motion_re.py fit <study>/motion/01-badge-connectors pulse.mean --pulse",
+  "motion_re.py claims <study>/motion/01-badge-connectors"
+ ]
+}

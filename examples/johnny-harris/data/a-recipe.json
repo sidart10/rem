@@ -1,0 +1,153 @@
+{
+ "effect": "01-badge-connectors",
+ "source": "https://www.youtube.com/watch?v=-DDbYSg0Alw",
+ "made": "2026-10-22T00:04:06",
+ "fps": 23.976023976023978,
+ "times": "seconds from the effect window's first frame",
+ "ready": false,
+ "compares": [
+  {
+   "rebuild": "01-badge-connectors-rebuild-v4",
+   "at": "2026-10-21T20:39:12",
+   "passed": 26,
+   "of": 29,
+   "ready": false
+  },
+  {
+   "rebuild": "01-badge-connectors-rebuild-v5",
+   "at": "2026-10-21T20:39:13",
+   "passed": 22,
+   "of": 29,
+   "ready": false
+  },
+  {
+   "rebuild": "01-badge-connectors-rebuild-v6",
+   "at": "2026-10-21T20:39:13",
+   "passed": 26,
+   "of": 29,
+   "ready": false
+  }
+ ],
+ "claims_sha256": "1eeb21c7ec43c37a6de8e2c22dde993849ea1c4c2f4206298e85eebb2a43c06b",
+ "camera": {
+  "method": "anchors",
+  "zoom_total": 1.08602,
+  "zoom_per_s": 0.02485,
+  "linear_max_err": 0.0,
+  "centre_shift_px": [
+   44.2,
+   -19.9
+  ],
+  "min_inliers": 62
+ },
+ "moves": [
+  {
+   "quantity": "line-left.drawn",
+   "ease": "sine.out",
+   "nearest_ease": "sine.out",
+   "bic_gap": 61.2,
+   "start_s": 0.8967,
+   "settle_s": 3.0239,
+   "from": 0.0,
+   "to": 346.0,
+   "unit": "px",
+   "t10": 0.9959,
+   "t50": 1.6345,
+   "t90": 2.3871,
+   "t95": 2.5582,
+   "overshoot": 0.0,
+   "measured_by": "pixels --name line-left --rule luma<60 --rule dluma<-40 --within-source sam3-dotted-line --not-source sam3-octagon --not-pad 2 --open 3 --path-auto 898,609 --toward 640,240 --skip 138 --origin 74 --bridge 40"
+  },
+  {
+   "quantity": "line-right.drawn",
+   "ease": "sine.out",
+   "nearest_ease": "sine.out",
+   "bic_gap": 51.0,
+   "start_s": 0.8967,
+   "settle_s": 3.149,
+   "from": 0.0,
+   "to": 370.0,
+   "unit": "px",
+   "t10": 1.0531,
+   "t50": 1.6719,
+   "t90": 2.4817,
+   "t95": 2.6308,
+   "overshoot": 0.0,
+   "measured_by": "pixels --name line-right --rule luma<60 --rule dluma<-40 --within-source sam3-dotted-line --not-source sam3-octagon --not-pad 2 --open 3 --path-auto 898,609 --toward 1370,764 --skip 138 --origin 74 --bridge 40"
+  },
+  {
+   "quantity": "camera.scale",
+   "ease": "none",
+   "nearest_ease": "none",
+   "bic_gap": 588.9,
+   "start_s": 0.0417,
+   "settle_s": 3.4201,
+   "from": 1.001,
+   "to": 1.085,
+   "unit": "x",
+   "t10": 0.3792,
+   "t50": 1.7309,
+   "t90": 3.0822,
+   "t95": 3.2533,
+   "overshoot": 0.0119,
+   "measured_by": "camera --anchors 640,240 1370,764"
+  }
+ ],
+ "pulses": [
+  {
+   "quantity": "pulse.mean",
+   "measured_by": "pixels --name pulse --value red --rule dluma>-40 --ring 898,609,65,136 --not-source sam3-octagon",
+   "base": 51.223,
+   "peak": 90.954,
+   "peak_t": 0.7925,
+   "rise_t50": 0.3116,
+   "fall_t50": 1.2513,
+   "keys": [
+    [
+     0.0,
+     -0.036
+    ],
+    [
+     0.1252,
+     0.034
+    ],
+    [
+     0.3337,
+     0.553
+    ],
+    [
+     0.5839,
+     0.938
+    ],
+    [
+     0.7925,
+     1.0
+    ],
+    [
+     1.3764,
+     0.302
+    ],
+    [
+     2.002,
+     -0.139
+    ],
+    [
+     2.6277,
+     -0.225
+    ],
+    [
+     3.4618,
+     -0.227
+    ]
+   ]
+  }
+ ],
+ "manual": {
+  "beads.gap_px": 22.91,
+  "beads.radius_px": 1.87,
+  "beads.basis": "observed: beads_a.py on the Britain line, f80 (geometry.json)",
+  "rope.look": "near-black rope, white beads, a soft edge glow in the destination colour (observed)",
+  "lines.start_together": true,
+  "lines.start_basis": "observed by eye: both lines sprout on f19, the pulse peak"
+ }
+}

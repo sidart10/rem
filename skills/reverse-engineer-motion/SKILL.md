@@ -52,6 +52,7 @@ uv run scripts/doctor.py   # checks ffmpeg, yt-dlp and FAL_KEY
 | Claims, replay, compare: claims with tolerances, the same steps replayed on a rebuild, per-claim pass or fail | built | `claims`, `replay`, `compare` |
 | Recipe: the build-facing file a graphic's builder reads | built | `recipe` |
 | Kinetic type: letters keyed locally, per-letter moves, arrivals, stacked echoes, streaks | built | `glyph_motion.py` |
+| Side-by-side: the original and its rebuilds frame-locked, labelled, as MP4, GIF and stills | built | `side_by_side.py` |
 | Perspective: rotateX/Y and tilt from the corners (flips can't be measured without it) | not yet | |
 
 ## How to run it
@@ -82,6 +83,7 @@ mre compare $E $S/motion/<nn-slug>-rebuild-v1
 mre recipe $E --set beads.gap_px=22.91       # recipe.json; hand-measured numbers go in `manual`
 mre clean $S                                 # frame caches go; masks, numbers and recipes stay
 mre spend --study $S
+uv run scripts/side_by_side.py $E $S/motion/<nn-slug>-rebuild-v1 --out cmp.mp4 --gif cmp.gif --stills 24  # the watch
 ```
 
 - **Pick the window from just before the effect's cue to just after it settles or leaves.** Every frame costs
@@ -130,6 +132,10 @@ Read the numbers from the file; don't copy them by hand.
   rebuild measured 4 frames late at t50, which exposed a sine.out. The rebuild lands within about a frame on 15 of 16
   timing checkpoints and passes 26 of 29 claims; the rest is a masking difference in the last 5% of each line.
 
+A full worked example (three Johnny Harris effects, every command and rebuild version) is in the repo's
+`examples/johnny-harris/`.
+
 Files: `scripts/motion_re.py` (CLI and `--self-test`), `scripts/glyph_motion.py` (kinetic type),
+`scripts/side_by_side.py` (the frame-locked comparison video),
 `scripts/motionre/` (study, budget, frames, masks, measure, link, sheet, camera, series, pixels, fit, claims, glyphs,
 fetch, fal_client), `scripts/doctor.py`, `references/budget.json`.

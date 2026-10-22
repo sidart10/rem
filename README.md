@@ -7,6 +7,11 @@ at a few seconds of a YouTube, Instagram or TikTok video. It finds every element
 when it starts, slows and stops, fits the ease curve, and writes down claims you can test. Then it measures your
 rebuild with the same code and fails it, claim by claim, wherever the timing is off.
 
+![Johnny Harris's map animation (top) and a rebuild made from the measured numbers (bottom), frame-locked](examples/johnny-harris/media/a-original-vs-rebuild.gif)
+
+*Top: Johnny Harris's original. Bottom: a rebuild made only from the numbers this tool measured. [The full worked example](examples/johnny-harris/) shows every command, every number and every rebuild version. Footage
+credit and rights: [About the footage](examples/johnny-harris/#about-the-footage).*
+
 ## Why
 
 My library of creator effects was first rebuilt from screenshots and written notes, and the rebuilds kept coming out
@@ -115,6 +120,24 @@ mre recipe $E                                 # recipe.json for your builder
 The full walkthrough, including measuring thin lines and glows that SAM can't see, and proving a rebuild, is in
 [`skills/reverse-engineer-motion/SKILL.md`](skills/reverse-engineer-motion/SKILL.md).
 
+To watch an original and your rebuilds frame-locked, with labels and a frame counter:
+
+```bash
+uv run scripts/side_by_side.py $E $S/motion/01-card-flip-rebuild-v1 --out compare.mp4 --gif compare.gif --stills 24
+```
+
+## Worked example
+
+[`examples/johnny-harris/`](examples/johnny-harris/) takes three effects from one Johnny Harris video all the way
+through: the prompts that worked and the ones that didn't, the exact commands, the measured numbers, every rebuild
+version and what its comparison caught, and the claim-by-claim result.
+
+**Why measure.** The middle row moves its lines at a constant speed and looked right. Measured, it was 4 frames late
+at the halfway point. The original eases out (`sine.out`), and the bottom row, built from the fitted curve, lands
+within about a frame.
+
+![Original (top), a constant-speed rebuild (middle) and the eased rebuild (bottom), frame-locked](examples/johnny-harris/media/a-linear-vs-eased.gif)
+
 ## Guardrails
 
 - **Public footage only goes to the cloud.** A clip is sent to fal only when it came from a public URL (or you pass
@@ -130,9 +153,10 @@ teaches you something.
 
 ## What works, what doesn't yet
 
-Tested on a storyboard-deck effect (41 frames, $0.30: every card tracked, including edge-on frames) and a map effect
-with badges and beaded lines over a camera push (84 frames, $1.36: matched a hand measurement within a frame; the
-rebuild passes 26 of 29 claims).
+Tested on a storyboard-deck effect (41 frames, $0.30: every card tracked, including edge-on frames) and three Johnny
+Harris effects ([worked example](examples/johnny-harris/)): a map with badges and beaded lines over a camera push (84
+frames, $1.36: matched a hand measurement within a frame; the rebuild passes 26 of 29 claims), a torn-paper quote card
+and a badge that builds, jumps and ripples (both measured locally, $0).
 
 - **Not yet:** 3D perspective (rotateX/Y, tilt), so flips are measured in 2D only.
 - **SAM 3 misses thin, half-drawn lines.** Measure those locally with `pixels --path-auto`.

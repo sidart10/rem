@@ -1,0 +1,271 @@
+{
+ "effect": "01-badge-connectors",
+ "made": "2026-10-21T20:33:16",
+ "fps": 23.976023976023978,
+ "tol_frames": 1.5,
+ "value_tol": 0.02,
+ "claims": [
+  {
+   "id": "line-left.drawn.t10",
+   "quantity": "line-left.drawn",
+   "what": "t10",
+   "kind": "time",
+   "value": 0.9959,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-left.drawn.t50",
+   "quantity": "line-left.drawn",
+   "what": "t50",
+   "kind": "time",
+   "value": 1.6345,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-left.drawn.t90",
+   "quantity": "line-left.drawn",
+   "what": "t90",
+   "kind": "time",
+   "value": 2.3871,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-left.drawn.t95",
+   "quantity": "line-left.drawn",
+   "what": "t95",
+   "kind": "time",
+   "value": 2.5582,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-left.drawn.start",
+   "quantity": "line-left.drawn",
+   "what": "start",
+   "kind": "value",
+   "value": 0.0,
+   "tol": 6.92,
+   "basis": "observed"
+  },
+  {
+   "id": "line-left.drawn.end",
+   "quantity": "line-left.drawn",
+   "what": "end",
+   "kind": "value",
+   "value": 346.0,
+   "tol": 6.92,
+   "basis": "observed"
+  },
+  {
+   "id": "line-left.drawn.overshoot",
+   "quantity": "line-left.drawn",
+   "what": "overshoot",
+   "kind": "value",
+   "value": 0.0,
+   "tol": 0.02,
+   "basis": "derived"
+  },
+  {
+   "id": "line-left.drawn.ease",
+   "quantity": "line-left.drawn",
+   "what": "ease",
+   "kind": "ease",
+   "value": "sine.out",
+   "tol": null,
+   "basis": "derived"
+  },
+  {
+   "id": "line-right.drawn.t10",
+   "quantity": "line-right.drawn",
+   "what": "t10",
+   "kind": "time",
+   "value": 1.0531,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-right.drawn.t50",
+   "quantity": "line-right.drawn",
+   "what": "t50",
+   "kind": "time",
+   "value": 1.6719,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-right.drawn.t90",
+   "quantity": "line-right.drawn",
+   "what": "t90",
+   "kind": "time",
+   "value": 2.4817,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-right.drawn.t95",
+   "quantity": "line-right.drawn",
+   "what": "t95",
+   "kind": "time",
+   "value": 2.6308,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "line-right.drawn.start",
+   "quantity": "line-right.drawn",
+   "what": "start",
+   "kind": "value",
+   "value": 0.0,
+   "tol": 7.4,
+   "basis": "observed"
+  },
+  {
+   "id": "line-right.drawn.end",
+   "quantity": "line-right.drawn",
+   "what": "end",
+   "kind": "value",
+   "value": 370.0,
+   "tol": 7.4,
+   "basis": "observed"
+  },
+  {
+   "id": "line-right.drawn.overshoot",
+   "quantity": "line-right.drawn",
+   "what": "overshoot",
+   "kind": "value",
+   "value": 0.0,
+   "tol": 0.02,
+   "basis": "derived"
+  },
+  {
+   "id": "line-right.drawn.ease",
+   "quantity": "line-right.drawn",
+   "what": "ease",
+   "kind": "ease",
+   "value": "sine.out",
+   "tol": null,
+   "basis": "derived"
+  },
+  {
+   "id": "pulse.mean.peak_t",
+   "quantity": "pulse.mean",
+   "what": "peak_t",
+   "kind": "time",
+   "value": 0.7925,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "pulse.mean.rise_t50",
+   "quantity": "pulse.mean",
+   "what": "rise_t50",
+   "kind": "time",
+   "value": 0.3116,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "pulse.mean.fall_t50",
+   "quantity": "pulse.mean",
+   "what": "fall_t50",
+   "kind": "time",
+   "value": 1.2513,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "pulse.mean.base",
+   "quantity": "pulse.mean",
+   "what": "base",
+   "kind": "value",
+   "value": 51.223,
+   "tol": 1.9865,
+   "basis": "observed"
+  },
+  {
+   "id": "pulse.mean.peak",
+   "quantity": "pulse.mean",
+   "what": "peak",
+   "kind": "value",
+   "value": 90.954,
+   "tol": 1.9865,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.t10",
+   "quantity": "camera.scale",
+   "what": "t10",
+   "kind": "time",
+   "value": 0.3792,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.t50",
+   "quantity": "camera.scale",
+   "what": "t50",
+   "kind": "time",
+   "value": 1.7309,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.t90",
+   "quantity": "camera.scale",
+   "what": "t90",
+   "kind": "time",
+   "value": 3.0822,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.t95",
+   "quantity": "camera.scale",
+   "what": "t95",
+   "kind": "time",
+   "value": 3.2533,
+   "tol": 0.0626,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.start",
+   "quantity": "camera.scale",
+   "what": "start",
+   "kind": "value",
+   "value": 1.001,
+   "tol": 0.0017,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.end",
+   "quantity": "camera.scale",
+   "what": "end",
+   "kind": "value",
+   "value": 1.085,
+   "tol": 0.0017,
+   "basis": "observed"
+  },
+  {
+   "id": "camera.scale.overshoot",
+   "quantity": "camera.scale",
+   "what": "overshoot",
+   "kind": "value",
+   "value": 0.0119,
+   "tol": 0.02,
+   "basis": "derived"
+  },
+  {
+   "id": "camera.scale.ease",
+   "quantity": "camera.scale",
+   "what": "ease",
+   "kind": "ease",
+   "value": "none",
+   "tol": null,
+   "basis": "derived"
+  }
+ ],
+ "not_claimed": []
+}
